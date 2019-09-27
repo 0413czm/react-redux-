@@ -21,7 +21,7 @@ class todoListUi extends Component {
         <List
           bordered
           dataSource={this.props.list}
-          renderItem={(item,index) => <List.Item onClick={(index) => {this.props.deleteItem(index)}}>{item}</List.Item>}
+          renderItem={(item,index) => <List.Item onClick={() => {this.props.deleteItem(index)}}>{item}</List.Item>}
         ></List>
       </div>
     </div>
